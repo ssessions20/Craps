@@ -1,26 +1,32 @@
 
 /**
- * Write a description of class Dice here.
+ * The dice class rolls two Die objects and stores the values in an array.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Stuart Sessions
+ * @version 01/22/19
  */
 import java.util.Scanner;
 public class Dice
 {
     private Die d1;
     private Die d2;
-    
+    /**
+     * Constructor for objects of class Dice
+     */
     public Dice()
     {
         d1 = new Die();
         d2 = new Die();
     }
-    
+
+    /**
+     * The roll method takes two randomized dice rolls and stores them in an array.
+     * 
+     * @return result an array of two randomized numbers between 1-6;
+     */
     public int[] roll()
     {
         int[] result = {d1.roll(), d2.roll()};
-        System.out.println("Debug: d1 roll and d2 roll " + result[0] + " " + result[1]);
         return result;
     }
 }

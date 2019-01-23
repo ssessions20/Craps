@@ -1,9 +1,9 @@
 
 /**
- * Write a description of class Die here.
+ * The die class constructs a single die and produces a randomized number between 1-6.
  *
  * @author Stuart Sessions
- * @version (a version number or a date)
+ * @version 01/22/19
  */
 public class Die
 {
@@ -19,10 +19,10 @@ public class Die
     }
 
     /**
-     * An example of a method - replace this comment with your own
+     * The roll method returns a random number between 1-6.
      *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
+     * 
+     * @return roll a random int value from 1-6
      */
     public int roll()
     {
