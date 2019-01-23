@@ -20,6 +20,7 @@ public class Dice
     public int[] roll()
     {
         int[] result = {d1.roll(), d2.roll()};
+        System.out.println("Debug: d1 roll and d2 roll " + result[0] + " " + result[1]);
         return result;
     }
 }
